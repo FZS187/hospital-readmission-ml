@@ -90,7 +90,7 @@ and run the notebook from top to bottom to reproduce the full analysis, model co
 ## Project Structure
 
 ```text
-30-Day-Hospital-Readmission-Prediction/
+hospital-readmission-ml/
 ├── README.md                      # Project overview, methodology, results and instructions
 ├── requirements.txt               # Python dependencies required to run the project
 ├── .gitignore                     # Files and folders excluded from Git
