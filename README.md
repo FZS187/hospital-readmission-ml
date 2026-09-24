@@ -21,34 +21,22 @@ Run all following commands from the `30-Day-Hospital-Readmission-Prediction/` pr
 
 ### 2. Create a virtual environment
 
-```bash
-python -m venv .venv
+```powershell
+uv venv
 ```
 
-Activate it:
-
-**Windows**
-
-```bash
-.venv\Scripts\activate
-```
-
-**macOS / Linux**
-
-```bash
-source .venv/bin/activate
-```
+`uv` installs Python into `.venv`, so activating the environment is not required.
 
 ### 3. Install dependencies
 
-```bash
-pip install -r requirements.txt
+```powershell
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
 ```
 
 ### 4. Train the final model
 
-```bash
-python -m src.train
+```powershell
+.\.venv\Scripts\python.exe -m src.train
 ```
 
 This command:
@@ -65,8 +53,8 @@ models/random_forest.joblib
 
 ### 5. Generate predictions
 
-```bash
-python -m src.predict
+```powershell
+.\.venv\Scripts\python.exe -m src.predict
 ```
 
 The prediction script:
